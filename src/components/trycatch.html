@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <canvas style="border:dodgerblue; background-color:dodgerblue"  b id="myCanvas"></canvas>
+    </div>
+</body>
+<script>
+    function WorkthroughArray() {
+        try {
+
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.fillStyle = "blue";
+
+            contxt.arc(50, 50, 25, 0, 360);
+
+            context.fill();
+            context.strokeStyle = "red";
+            context.stroke();
+        } catch (e) {
+            console.log(e.message);
+ 
+        } finally { 
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.fillStyle = "blue";
+
+            context.arc(50, 50, 25, 0, 360);
+
+            context.fill();
+            context.strokeStyle = "red";
+            context.stroke();
+        }
+
+    }
+</script>
+
+</html>

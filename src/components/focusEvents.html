@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<div><input type="text" id="firstNameText"></div>
+<div id="ruleViolation"></div>
+</body>
+<script>
+    window.onload = function () {
+        document.getElementById("firstNameText").focus();
+        document.getElementById("firstNameText").addEventListener("blur", function () {
+            if (this.value.length < 5) {
+                document.getElementById("ruleViolation").innerText =
+                    'First Name is required to be 5 letters.';
+                document.getElementById("ruleViolation").style.color = 'red';
+                this.focus();
+            }
+        });
+    }
+</script>
+
+</html>
