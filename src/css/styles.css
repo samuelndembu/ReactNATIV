@@ -1,3 +1,42 @@
-.news_item{
-    background: red;
+body{
+    margin:0
 }
+header{
+    background-color: darkcyan;
+    text-align: center
+}
+.logo{
+    color: aqua;
+    font-size: 40px;
+    font-family: 'Cambria'
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.news_item{
+padding: 20px;
+box-sizing: border-box;
+border-bottom: 1px solid grey
+}
+.product {
+			border: 1px solid #d2d2d2;
+			box-sizing: border-box;
+			padding: 20px;
+			width: 250px;
+			float: left;
+			margin: 10px;
+		}
+
+		.product h1 {
+			margin: 0 0 10px;
+			color: #03A9F4;
+		}
+
+		.product span {
+			background: #F44336;
+			color: #fff;
+			padding: 5px;
+		}
